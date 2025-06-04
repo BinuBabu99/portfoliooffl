@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#education">education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,It's Me</h3>
+            <h1>Binu Babu</h1>
+            <h3>And I'm a <span class="multiple-text">Full Stack Developer</span></h3>
+            <p>A passionate web developer who possesses a strong dedication to
+                the field of web development. As a web developer, I have a wide range of skills and talents,
+                including proficiency in programming languages such as HTML, CSS, JavaScript, and possibly
+                more advanced languages like Python, Ruby, or PHP. They are skilled in both front-end and
+                back-end development, enabling them to create seamless and interactive websites and web
+                applications.
+                Overall, I'm a dedicated and skilled web developer who brings enthusiasm, expertise, and
+                a commitment to excellence to the world of web development.</p>
+
+            <a href="./assets/OFFL CV (1).pdf " target="_blank" class="btn">Download CV</a>
+        </div>
+        <div data-aos="fade-left" class="home-img">
+            <img src="./assets/IMG_3769.JPG" alt="">
+        </div>
+    </section>
+
+    <!-- about -->
+
+    <section class="about" id="about">
+        <div data-aos="fade-right" class="about-img">
+            <img src="./assets/photo_2023-12-23_18-26-29.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>I am a Computer Science Engineer ,And I Completed my B.Tech Degree from St.
+                Joseph's College of Engineering and Technology, Palai. I am a passionate
+                programmer and a web developer who likes to travel around the world and
+                experience different people, culture and food. I believe travelling gives
+                you a new perspective to everything. I am seeking a challenging position
+                to the best utilization of my skills and looking for opportunities to
+                grow my technical and managerial skills and ready to fulfill organizational
+                goals.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <!-- service -->
+
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>services</span></h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Web development is a dynamic and ever-evolving field that
+                    involves creating, building, and maintaining websites and
+                    web applications for the internet. It encompasses a wide range
+                    of skills, technologies, and practices to bring digital experiences
+                    to life.</p>
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+            <div class="service-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>Graphic design is a creative and visual communication discipline that
+                    involves the use of imagery, typography, color, and layout to convey
+                    messages or information effectively and aesthetically. Graphic designers,
+                    often referred to as visual communicators, play a crucial role in shaping
+                    the visual identity of brands, organizations, products, and various forms
+                    of media. </p>
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+            <div class="service-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>Digital marketing is a broad and dynamic field that encompasses various
+                    online strategies and tactics to promote products, services, or brands
+                    through digital channels. It leverages the power of the internet and
+                    digital technologies to reach and engage with a target audience,
+                    convert leads into customers, and ultimately achieve business goals.
+                </p>
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- education -->
+    <section class="services" id="education">
+        <h2 class="heading">Education.</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class='bx bxs-graduation'></i>
+                <h3>S.S.L.C</h3>
+                <p>St.Peter's Higher Secondary School Kurumbanadom</p>
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+            <div class="service-box">
+                <i class='bx bxs-graduation'></i>
+                <h3>Plus Two</h3>
+                <p>N.S.S Boys Higher Secondary School
+
+                    Karukachal</p>
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+            <div class="service-box">
+                <i class='bx bxs-graduation'></i>
+                <h3>B.Tech</h3>
+                <p>Computer Science & Engineering from
+
+                    SJCET
+
+                    Palai</p>
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="https://formspree.io/f/mbjvkrvl" method="POST" id="contactForm">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="full-name" required>
+                <input type="text" placeholder="Email Address" name="email" id="cemail" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" name="number" id="cphone" required>
+                <input type="text" name="email-subject" placeholder="Email subject">
+            </div>
+            <textarea id="" cols="30" rows="10" placeholder="Your Message" name="textarea" required></textarea>
+            <input type="submit" class="btn" onclick="phoneValidate()">
+        </form>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>copyright &copy; 2025 by Binu Babu | All Rights Reserved</p>
+        </div>
+        <!-- <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div> -->
+    </footer>
+
+
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
